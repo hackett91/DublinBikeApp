@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fav_item"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardBackgroundColor="@color/colorCard"
+    android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+    android:outlineSpotShadowColor="@color/colorText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="name"
+            android:textColor="@color/colorText"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/fav_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fav_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="address"
+            android:textColor="@color/colorText"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/slots"
+            android:layout_width="36dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/fav_address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/slots" />
+
+        <TextView
+            android:id="@+id/fav_bikes_available_stands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fav_address"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/slots"
+            android:text="availableslots"
+            android:textColor="@color/colorText" />
+
+        <ImageView
+            android:id="@+id/bikes"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/fav_address"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/fav_bikes_available_stands"
+            android:src="@drawable/bikes" />
+
+        <TextView
+            android:id="@+id/fav_bikes_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fav_bikes_available_stands"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/bikes"
+            android:text="availablebikes"
+            android:textColor="@color/colorText" />
+
+        <ImageButton
+            android:id="@+id/favicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fav_bikes_available"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorAccent"
+            android:src="@drawable/remove" />
+
+        <TextView
+            android:id="@+id/removeFave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fav_bikes_available"
+            android:layout_alignLeft="@+id/favicon"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="remove"
+            android:textColor="@color/colorText" />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
